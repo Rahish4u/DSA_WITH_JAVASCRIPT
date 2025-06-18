@@ -1,8 +1,8 @@
 
 // Loop to print "Hello World" 100 times
-for (let i = 0; i < 100; i++) {
-  console.log("Hello World");
-}
+// for (let i = 0; i < 100; i++) {
+//   console.log("Hello World");
+// }
 
 // Loop to print numbers from 1 to 100
 // for (let i = 0; i <= 100; i++) {
@@ -117,3 +117,5 @@ for (let i = 0; i < 100; i++) {
 // }
 
 // console.log("Hell0 world")
+
+
