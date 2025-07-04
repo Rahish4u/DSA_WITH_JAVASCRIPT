@@ -47,3 +47,18 @@
 //   return result;
 // }
 // console.log(moveZeros([0, 1, 0, 3, 12, 0, 52, 0, 0, 66])); // [1, 3, 12, 0, 0]
+
+function rahish() {
+  let count = 10;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = rahish();
+counter(); // 1
+counter(); // 2
+counter(); // 3
+counter(); // 4
+counter(); // 5
