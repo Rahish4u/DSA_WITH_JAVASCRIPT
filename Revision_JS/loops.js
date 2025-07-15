@@ -100,36 +100,66 @@
 
 // 9. Guess number game – use while to ask until correct
 
-let secretNumber = Math.floor(Math.random() * 10) + 1;
-let guess;
+// let secretNumber = Math.floor(Math.random() * 10) + 1;
+// let guess;
 
-while (true) {
-  guess = prompt("🎯 Guess a number between 1 and 10:");
+// while (true) {
+//   guess = prompt("🎯 Guess a number between 1 and 10:");
 
-  // ❌ User cancelled or left blank
-  if (guess === null || guess.trim() === "") {
-    alert("⚠️ Please enter a number (don't leave it blank).");
-    continue;
-  }
+//   // ❌ User cancelled or left blank
+//   if (guess === null || guess.trim() === "") {
+//     alert("⚠️ Please enter a number (don't leave it blank).");
+//     continue;
+//   }
 
-  // ✅ Convert to number
-  guess = Number(guess);
+//   // ✅ Convert to number
+//   guess = Number(guess);
 
-  // ❌ Not a number
-  if (isNaN(guess)) {
-    alert("🚫 That's not a valid number. Try again!");
-    continue;
-  }
+//   // ❌ Not a number
+//   if (isNaN(guess)) {
+//     alert("🚫 That's not a valid number. Try again!");
+//     continue;
+//   }
 
-  // ✅ Check guess
-  if (guess < secretNumber) {
-    alert("📉 Too low! Try again.");
-  } else if (guess > secretNumber) {
-    alert("📈 Too high! Try again.");
-  } else {
-    alert("🎉 Correct! You guessed the number! 🎊");
-    break; // Exit the loop
-  }
-}
+//   // ✅ Check guess
+//   if (guess < secretNumber) {
+//     alert("📉 Too low! Try again.");
+//   } else if (guess > secretNumber) {
+//     alert("📈 Too high! Try again.");
+//   } else {
+//     alert("🎉 Correct! You guessed the number! 🎊");
+//     break; // Exit the loop
+//   }
+// }
+
+// 10. Pattern: Print triangle using *
+
+// let rows = 10;
+
+// for(let i = 1; i <= rows; i++){
+//   let pattern = "";
+//   for(let j = 1; j <= i; j++){
+//     pattern += "*";
+//   }
+//   console.log(pattern)
+// }
+
+// reverse print
+// let rows = 10;
+
+// for(let i = rows; i >= 1; i--){
+//   let pattern = "";
+//   for(let j = 1; j <= i; j++){
+//     pattern += "*";
+//   }
+//   console.log(pattern)
+// }
 
 
+ function shout(msg) {
+ return msg.toUpperCase();
+ }
+ function processMessage(fn) {
+ console.log(fn("hello"));
+ }
+ processMessage(shout);
